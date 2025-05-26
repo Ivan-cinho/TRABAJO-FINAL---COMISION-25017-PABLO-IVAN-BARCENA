@@ -11,7 +11,7 @@ function Login() {
     };
 
     return(
-        <Container>
+        <Container className="mt-5" style={{ minHeight: 'calc(100vh - 200px)' }}>
             <h2>el login</h2>
             <Form>
                 <Form.Group className="mb-3">
@@ -22,7 +22,7 @@ function Login() {
                     <Form.Label>Pass</Form.Label>
                     <Form.Control type="password"/>
                 </Form.Group>
-                <Button variant="primary" onClick={manejadorDeLogueo}>Entrá</Button>
+                <Button variant="dark" onClick={manejadorDeLogueo}>Entrá</Button>
             </Form>
         </Container>
     );
